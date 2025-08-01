@@ -3,26 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pertamaku</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Stavilon - Teknologi Pelayanan">
+    <meta name="keywords" content="horeca, equipment, supplies">
+    <meta name="author" content="Stavilon">
+    <title>Stavilon</title>
+    
+    <!-- Latest Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?v=3.4.0"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E11D1D',
+                        secondary: '#1E1E1E'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .transition-transform {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Halo, Dunia!</h1>
-        <p>Ini adalah website pertamaku yang dibuat dengan GitHub Pages.</p>
-    </header>
+<body class="bg-[#F9FAFB] text-[#1E1E1E]">
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="bg-white h-full w-4/5 max-w-sm p-6 transform transition-transform duration-300 -translate-x-full">
+            <div class="flex justify-between items-center mb-6">
+                <img src="https://storage.googleapis.com/a1aa/image/562bcb63-e742-43d8-7969-22de3c771c9c.jpg" 
+                     alt="Stavilon Logo" 
+                     class="w-8 h-8">
+                <button onclick="toggleMobileMenu()" class="text-gray-500">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="#" class="block text-gray-600 hover:text-primary">TENTANG KAMI</a>
+                <a href="#" class="block text-gray-600 hover:text-primary">MEREK</a>
+                <a href="#" class="block text-gray-600 hover:text-primary">BLOG</a>
+                <a href="#" class="block text-gray-600 hover:text-primary">KONTAK</a>
+                <a href="#" class="block text-gray-600 hover:text-primary">CARA BELI</a>
+                <a href="#" class="block text-gray-600 hover:text-primary">PENGIRIMAN</a>
+            </nav>
+        </div>
+    </div>
 
-    <main>
-        <section>
-            <h2>Selamat Datang</h2>
-            <p>Saya sangat senang bisa berbagi panduan ini. Mari kita eksplorasi bersama!</p>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Top Bar -->
+        <div class="hidden md:flex justify-between items-center py-2 text-xs text-gray-600">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-map-marker-alt text-[10px]"></i>
+                <span>Jakarta, Jl. Mendeleev No. 24b</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-primary transition-colors">TENTANG KAMI</a>
+                <a href="#" class="hover:text-primary transition-colors">MEREK</a>
+                <a href="#" class="hover:text-primary transition-colors">BLOG</a>
+                <a href="#" class="hover:text-primary transition-colors">KONTAK</a>
+                <a href="#" class="hover:text-primary transition-colors">CARA BELI</a>
+                <a href="#" class="hover:text-primary transition-colors">PENGIRIMAN</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-primary font-semibold">8 800 943 99 99</span>
+                <a href="mailto:s.horeca@stavilon.ru" class="hover:text-primary transition-colors">s.horeca@stavilon.ru</a>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="py-4 border-b border-gray-200">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="https://storage.googleapis.com/a1aa/image/562bcb63-e742-43d8-7969-22de3c771c9c.jpg" 
+                         alt="Stavilon Logo" 
+                         class="w-10 h-10">
+                    <div>
+                        <div class="font-bold text-lg">STAVILON</div>
+                        <div class="text-xs text-gray-600">Teknologi Pelayanan</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Search -->
+                <div class="hidden md:flex items-center space-x-4 flex-1 max-w-2xl mx-6">
+                    <button class="bg-primary hover:bg-red-700 transition-colors text-white px-4 py-2 rounded-md font-semibold">
+                        KATALOG
+                    </button>
+                    <div class="relative flex-1">
+                        <input type="text" 
+                               placeholder="Cari produk..." 
+                               class="w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-primary hover:text-red-700 transition-colors">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- User Actions -->
+                <div class="flex items-center space-x-6">
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="far fa-heart text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="fas fa-shopping-basket text-xl"></i>
+                    </button>
+                    <button class="text-gray-600 hover:text-primary transition-colors">
+                        <i class="far fa-user text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="relative mt-8 rounded-2xl overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" 
+                 alt="Restaurant interior with elegant table setting" 
+                 class="w-full h-[400px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent">
+                <div class="p-8 max-w-lg text-white">
+                    <h1 class="text-4xl font-bold mb-4">Kristal Inovatif dari Italia</h1>
+                    <p class="text-lg mb-6">Memiliki kejernihan tinggi, kilau cerah, dan kekuatan ekstra untuk pengalaman makan yang tak terlupakan.</p>
+                    <button class="bg-primary hover:bg-red-700 transition-colors text-white px-6 py-3 rounded-md font-semibold">
+                        Jelajahi Koleksi
+                    </button>
+                </div>
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Website Pertamaku</p>
+        <!-- Categories -->
+        <section class="my-16">
+            <h2 class="text-2xl font-bold text-center mb-8">Kategori Produk</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <!-- Category items -->
+                <a href="#" class="group">
+                    <div class="flex flex-col items-center p-4 rounded-lg hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://storage.googleapis.com/a1aa/image/db25c878-dbee-453f-eabc-6015dda3f1cf.jpg" 
+                             alt="Peralatan" 
+                             class="w-20 h-20 object-contain group-hover:scale-110 transition-transform">
+                        <span class="mt-4 text-sm font-medium text-gray-600 group-hover:text-primary">PERALATAN</span>
+                    </div>
+                </a>
+                <!-- Repeat for other categories -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://storage.googleapis.com/a1aa/image/562bcb63-e742-43d8-7969-22de3c771c9c.jpg" 
+                         alt="Stavilon Logo" 
+                         class="w-12 h-12 mb-4">
+                    <p class="text-gray-400">Teknologi Pelayanan Terbaik untuk Bisnis Anda</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Produk</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cara Beli</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Jakarta, Jl. Mendeleev No. 24b</li>
+                        <li>8 800 943 99 99</li>
+                        <li>s.horeca@stavilon.ru</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <form class="space-y-4">
+                        <input type="email" 
+                               placeholder="Email Anda" 
+                               class="w-full px-4 py-2 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-primary">
+                        <button class="w-full bg-primary hover:bg-red-700 transition-colors text-white px-4 py-2 rounded">
+                            Berlangganan
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Stavilon. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const menuContent = menu.querySelector('div');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    menuContent.classList.remove('-translate-x-full');
+                }, 10);
+            } else {
+                menuContent.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 300);
+            }
+        }
+    </script>
 </body>
 </html>
