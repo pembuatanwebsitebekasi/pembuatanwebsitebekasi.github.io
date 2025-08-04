@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolusi Website - Jago Bikin Website Sendiri!</title>
+    <title>Jasa Pembuatan Website Profesional</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -17,13 +17,22 @@
         /* Custom styles to apply Inter font */
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
         /* Gradient for CTA buttons */
         .cta-gradient {
-            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            background: linear-gradient(90deg, #ef4444, #f97316); /* Merah ke Oranye */
         }
         .cta-gradient:hover {
-            background: linear-gradient(90deg, #ef4444, #f59e0b);
+            background: linear-gradient(90deg, #f97316, #ef4444); /* Efek hover balik warna */
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); } /* Oranye */
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(249, 115, 22, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
         }
     </style>
 </head>
@@ -32,7 +41,7 @@
     <!-- HERO SECTION -->
     <header class="bg-white shadow-sm">
         <div class="container mx-auto px-6 py-4">
-            <h2 class="text-2xl font-bold text-gray-900">RevolusiWebsite.id</h2>
+            <h2 class="text-2xl font-bold text-gray-900">JasaWebsite.id</h2>
         </div>
     </header>
 
@@ -41,20 +50,25 @@
         <section class="py-16 md:py-24 bg-white">
             <div class="container mx-auto px-6 text-center">
                 <div class="max-w-4xl mx-auto">
+                    <!-- Promo badge with stronger color -->
+                    <div class="bg-red-600 text-white font-bold py-2 px-4 rounded-full inline-block mb-4">
+                        PROMO TERBATAS!
+                    </div>
                     <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-                        Stop Bayar Mahal, Sekarang <span class="text-red-600">Siapapun Bisa</span> Punya Website Profesional!
+                        Wujudkan Website Impian Anda <br> Hanya dengan <span class="text-red-600">Rp200.000</span>
                     </h1>
                     <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                        Hanya dengan Rp99.000, kuasai rahasia bikin website sendiri dari nol, tanpa ribet, dan tanpa biaya tersembunyi.
+                        Kami bantu bisnis Anda punya website profesional dengan domain .my.id. Cepat, murah, dan siap tayang!
                     </p>
                     <div class="mt-10">
-                        <a href="#harga" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block">
-                            👉 Ya, Saya Mau Jago Bikin Website!
+                        <a href="#harga" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                            👉 Pesan Website Sekarang!
                         </a>
-                        <p class="mt-3 text-sm text-gray-500">Stok Terbatas & Penawaran Segera Berakhir!</p>
+                        <p class="mt-4 text-sm text-red-500 font-semibold">Tawaran spesial ini terbatas.</p>
                     </div>
                     <div class="mt-12">
-                        <img src="https://placehold.co/800x450/e2e8f0/333333?text=Mockup+Ebook+Revolusi+Website" alt="Mockup Ebook Revolusi Website" class="rounded-lg shadow-2xl mx-auto">
+                         <!-- Placeholder image for the service, can be replaced with a proper mockup -->
+                        <img src="gambar.png" alt="Mockup Website Profesional" class="rounded-lg shadow-2xl mx-auto">
                     </div>
                 </div>
             </div>
@@ -64,25 +78,25 @@
         <section class="py-16 md:py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Pernah Merasa Punya Website Itu...</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apakah Anda Punya Masalah Ini?</h2>
                 </div>
                 <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold text-red-600">MAHAL?</h3>
-                        <p class="mt-4 text-gray-600">Harus keluar jutaan untuk bayar developer dan langganan hosting tahunan.</p>
+                        <p class="mt-4 text-gray-600">Jasa website lain harganya jutaan, tidak masuk anggaran bisnis kecil Anda.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                         <h3 class="text-2xl font-bold text-red-600">RIBET?</h3>
-                        <p class="mt-4 text-gray-600">Bingung dengan istilah coding, server, dan hal teknis lainnya yang bikin pusing.</p>
+                        <p class="mt-4 text-gray-600">Tidak punya waktu untuk mengelola atau membuat website sendiri.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-bold text-red-600">MAKAN WAKTU?</h3>
-                        <p class="mt-4 text-gray-600">Tidak punya waktu untuk belajar dari awal karena kesibukan sehari-hari.</p>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold text-red-600">TAKUT GAGAL?</h3>
+                        <p class="mt-4 text-gray-600">Khawatir hasil website tidak sesuai dengan ekspektasi Anda.</p>
                     </div>
                 </div>
                 <div class="mt-12 text-center max-w-3xl mx-auto bg-green-100 border-l-4 border-green-500 text-green-700 p-6 rounded-r-lg">
                     <p class="text-xl font-semibold">
-                        Lupakan Semua Itu! Ebook Revolusi Website hadir sebagai solusi cerdas untuk Anda. Kami membongkar semua rahasia dan memberikan jalan pintas.
+                        Kami adalah solusi yang Anda cari. Kami kerjakan semua untuk Anda, dengan harga yang sangat terjangkau.
                     </p>
                 </div>
             </div>
@@ -92,36 +106,20 @@
         <section class="py-16 md:py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Saja yang Akan Anda Dapatkan?</h2>
-                    <p class="mt-4 text-lg text-gray-600">Ini bukan sekadar ebook biasa. Ini adalah paket lengkap menuju kemandirian digital Anda.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ini yang Anda Dapatkan dengan Rp200.000!</h2>
                 </div>
                 <div class="mt-12 max-w-4xl mx-auto space-y-8">
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Panduan Dari Nol Jadi Mahir</h4>
-                            <p class="mt-1 text-gray-600">Belajar langkah demi langkah membuat website, bahkan jika Anda awam. Disusun dengan bahasa yang mudah dimengerti dan penuh gambar.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Revolusi Biaya Website</h4>
-                            <p class="mt-1 text-gray-600">Temukan cara cerdas membuat website <span class="font-bold">tanpa perlu membayar hosting bulanan/tahunan yang mahal.</span> Rahasia yang jarang diungkap!</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4">
-                        <div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div>
-                        <div>
-                            <h4 class="text-xl font-bold">Domain Super Murah</h4>
-                            <p class="mt-1 text-gray-600">Kami tunjukkan trik mendapatkan domain profesional hanya dengan modal <span class="font-bold">Rp16.000</span> saja. Website Anda akan terlihat kredibel.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start space-x-4 p-6 bg-yellow-100 border-l-4 border-yellow-400 rounded-r-lg">
+                    <!-- Feature Items -->
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Website Responsif</h4><p class="mt-1 text-gray-600">Tampilan website otomatis menyesuaikan di PC, tablet, dan smartphone.</p></div></div>
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Domain .my.id</h4><p class="mt-1 text-gray-600">Dapatkan domain .my.id untuk identitas bisnis online Anda. Upgrade ke .com tersedia!</p></div></div>
+                    <div class="flex items-start space-x-4"><div class="flex-shrink-0 bg-green-500 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">✓</div><div><h4 class="text-xl font-bold">Desain Profesional</h4><p class="mt-1 text-gray-600">Website modern dan bersih yang mencerminkan brand bisnis Anda.</p></div></div>
+
+                    <!-- Exclusive Bonus - Adapted for service -->
+                    <div class="flex items-start space-x-4 p-6 bg-yellow-100 border-l-4 border-yellow-400 rounded-r-lg ring-4 ring-yellow-300 ring-opacity-50">
                         <div class="flex-shrink-0 bg-yellow-400 text-white rounded-full h-8 w-8 flex items-center justify-center font-bold">⭐</div>
                         <div>
-                            <h4 class="text-xl font-bold">BONUS SPESIAL: Bimbingan Langsung & Komunitas Eksklusif</h4>
-                            <p class="mt-1 text-gray-700">Masuk ke dalam <span class="font-bold">grup WhatsApp eksklusif</span> bersama penulis dan member lainnya. Bingung di tengah jalan? Tanya langsung dan dapatkan jawaban!</p>
+                            <h4 class="text-xl font-bold">BONUS EKSKLUSIF</h4>
+                            <p class="mt-1 text-gray-700">Kami bantu Anda mengisi konten awal dan melakukan optimasi SEO dasar agar website siap bersaing.</p>
                         </div>
                     </div>
                 </div>
@@ -131,18 +129,16 @@
         <!-- OFFER & URGENCY SECTION -->
         <section id="harga" class="py-16 md:py-24 bg-gray-900 text-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Dapatkan Semua Kemudahan Ini Sekarang!</h2>
+                <h2 class="text-3xl md:text-4xl font-bold">Jangan Tunda Lagi, Tingkatkan Bisnis Anda Sekarang!</h2>
                 <div class="my-8">
-                    <p class="text-2xl text-gray-400 line-through">Harga Normal: Rp299.000</p>
-                    <p class="text-5xl md:text-7xl font-extrabold text-yellow-400 mt-2">Rp99.000</p>
+                    <p class="text-2xl text-gray-400 line-through">Harga Normal: Rp500.000</p>
+                    <p class="text-5xl md:text-7xl font-extrabold text-yellow-400 mt-2">HARI INI CUMA Rp200.000</p>
                 </div>
                 
                 <!-- Countdown Timer -->
                 <div class="mt-8 max-w-md mx-auto bg-red-600 p-4 rounded-lg shadow-lg">
-                    <h4 class="text-lg font-semibold text-white">Penawaran Berakhir Dalam:</h4>
+                    <h4 class="text-lg font-semibold text-white">PROMO HARGA SPESIAL BERAKHIR DALAM:</h4>
                     <div id="countdown" class="text-4xl font-bold text-white mt-2 flex justify-center space-x-4">
-                        <div><span id="days">00</span><p class="text-sm font-normal">Hari</p></div>
-                        <div>:</div>
                         <div><span id="hours">00</span><p class="text-sm font-normal">Jam</p></div>
                         <div>:</div>
                         <div><span id="minutes">00</span><p class="text-sm font-normal">Menit</p></div>
@@ -151,12 +147,17 @@
                     </div>
                 </div>
 
-                <p class="mt-8 text-lg text-yellow-300 font-semibold">Stok Ebook dan Slot Grup Bimbingan Sangat Terbatas!</p>
+                <div class="mt-8 bg-white text-gray-900 max-w-sm mx-auto p-4 rounded-lg">
+                    <p class="text-xl font-bold text-red-600">PERHATIAN: KUOTA PENGERJAAN HARI INI TERSISA</p>
+                    <p class="text-4xl font-extrabold mt-1"><span id="slots">17</span> SLOT LAGI!</p>
+                </div>
                 
-                <div class="mt-8">
-                    <a href="#" class="cta-gradient text-white font-bold text-lg md:text-xl py-4 px-10 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block">
-                        🚀 Amankan Ebook & Bonus Saya Sekarang!
+                <div class="mt-10">
+                    <a href="https://wa.me/6281236666268?text=Halo,%20saya%20tertarik%20dengan%20Website%20Rp200.000%20untuk%20bisnis%20saya
+" target="_blank" class="cta-gradient text-white font-bold text-lg md:text-xl py-5 px-12 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                        👇 AMANKAN PROMO SEKARANG!
                     </a>
+                    <p class="mt-3 text-yellow-300">Hubungi kami via WhatsApp untuk diskusi lebih lanjut!</p>
                 </div>
             </div>
         </section>
@@ -165,16 +166,16 @@
         <section class="py-16 md:py-20">
             <div class="container mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Kata Mereka yang Sudah Membaca?</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Apa Kata Klien Kami?</h2>
                 </div>
                 <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                     <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="text-gray-600 italic">"Gila, semudah ini ternyata bikin website. Gak perlu lagi bayar mahal ke orang. Ebooknya jelas banget, plus bisa nanya-nanya di grup itu ngebantu banget!"</p>
-                        <p class="mt-4 font-bold text-gray-900">- Budi, Pengusaha Kuliner</p>
+                        <p class="text-gray-600 italic">"Pengerjaannya cepat sekali, cuma butuh waktu 3 hari website saya sudah jadi. Desainnya juga keren, responsif, dan persis seperti yang saya mau!"</p>
+                        <p class="mt-4 font-bold text-gray-900">- Budi, Pemilik Kopi Budi</p>
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
-                        <p class="text-gray-600 italic">"Awalnya ragu, masa sih 16 ribu bisa punya domain. Ternyata beneran bisa! Ilmunya daging semua. Terima kasih banyak!"</p>
-                        <p class="mt-4 font-bold text-gray-900">- Ani, Freelancer</p>
+                        <p class="text-gray-600 italic">"Awalnya ragu dengan harganya, tapi ternyata hasilnya profesional. Komunikasinya juga sangat membantu. Sangat direkomendasikan!"</p>
+                        <p class="mt-4 font-bold text-gray-900">- Ani, Pengusaha Fashion</p>
                     </div>
                 </div>
             </div>
@@ -190,8 +191,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-gray-900">Jaminan Kepuasan 100%</h3>
-                        <p class="mt-2 text-gray-600">Kami sangat yakin dengan kualitas Ebook Revolusi Website. Jika Anda sudah mengikuti semua panduan namun masih merasa tidak mendapatkan manfaatnya, kami siap memberikan bimbingan personal hingga Anda berhasil.</p>
+                        <h3 class="text-2xl font-bold text-gray-900">Garansi Kepuasan & Revisi</h3>
+                        <p class="mt-2 text-gray-600">Kami memberikan garansi revisi sampai Anda puas dengan hasilnya. Kepuasan klien adalah prioritas kami.</p>
                     </div>
                 </div>
             </div>
@@ -200,12 +201,14 @@
         <!-- FINAL CTA SECTION -->
         <section class="py-16 md:py-24 bg-gray-800 text-white">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold">Tunggu Apa Lagi? Kesempatan Tidak Datang Dua Kali!</h2>
-                <p class="mt-4 text-lg text-gray-300">Berhentilah menunda impian Anda untuk memiliki website sendiri. Ambil langkah pertama Anda sekarang juga.</p>
-                <p class="text-5xl md:text-6xl font-extrabold text-yellow-400 mt-6">Cuma Rp99.000</p>
+                <h2 class="text-3xl md:text-4xl font-bold">Jangan Biarkan Peluang Bisnis Anda Lewat Begitu Saja!</h2>
+                <p class="mt-4 text-lg text-gray-300">Miliki website profesional Anda sekarang juga dan raih lebih banyak pelanggan.</p>
+                <p class="text-5xl md:text-6xl font-extrabold text-yellow-400 mt-6">Cuma Rp200.000</p>
+                <p class="mt-4 text-xl text-red-500 font-semibold">Tawaran harga spesial ini akan segera berakhir!</p>
                 <div class="mt-10">
-                    <a href="#" class="cta-gradient text-white font-bold text-lg md:text-xl py-5 px-12 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block">
-                        👇 KLIK DI SINI UNTUK MEMULAI REVOLUSI ANDA!
+                    <a href="https://wa.me/6281236666268?text=Halo,%20saya%20tertarik%20dengan%20Website%20Rp200.000%20untuk%20bisnis%20saya
+" target="_blank" class="cta-gradient text-white font-bold text-lg md:text-xl py-5 px-12 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 inline-block pulse-animation">
+                        👇 AMANKAN PROMO SEKARANG!
                     </a>
                 </div>
             </div>
@@ -215,7 +218,7 @@
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 RevolusiWebsite.id. Semua Hak Cipta Dilindungi.</p>
+            <p>&copy; 2025 JasaWebsite.id. Semua Hak Cipta Dilindungi.</p>
             <div class="mt-4">
                 <a href="#" class="text-gray-400 hover:text-white mx-2">Kebijakan Privasi</a>
                 <span class="text-gray-500">|</span>
@@ -227,33 +230,46 @@
     <script>
         // Countdown Timer Script
         (function () {
-            // Set the date we're counting down to (e.g., 1 day and 12 hours from now)
-            const countDownDate = new Date();
-            countDownDate.setDate(countDownDate.getDate() + 1);
-            countDownDate.setHours(countDownDate.getHours() + 12);
+            // Set the date we're counting down to (e.g., 3 hours from now)
+            const countDownDate = new Date().getTime() + 3 * 60 * 60 * 1000;
 
             const x = setInterval(function() {
                 const now = new Date().getTime();
                 const distance = countDownDate - now;
 
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                // Add leading zero if number is less than 10
                 const format = (num) => num < 10 ? '0' + num : num;
-
-                document.getElementById("days").innerText = format(days);
-                document.getElementById("hours").innerText = format(hours);
-                document.getElementById("minutes").innerText = format(minutes);
-                document.getElementById("seconds").innerText = format(seconds);
+                
+                if (document.getElementById("hours")) {
+                    document.getElementById("hours").innerText = format(hours);
+                    document.getElementById("minutes").innerText = format(minutes);
+                    document.getElementById("seconds").innerText = format(seconds);
+                }
 
                 if (distance < 0) {
                     clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "PENAWARAN BERAKHIR";
+                    document.getElementById("countdown").innerHTML = "PROMO TELAH BERAKHIR";
                 }
             }, 1000);
+        })();
+
+        // Slot Counter Script
+        (function() {
+            let slotsLeft = 17;
+            const slotElement = document.getElementById('slots');
+            
+            function updateSlots() {
+                if (slotsLeft > 5) {
+                    slotsLeft--;
+                    slotElement.innerText = slotsLeft;
+                }
+            }
+
+            // Decrease slot count randomly every few seconds to simulate purchases
+            setInterval(updateSlots, Math.random() * (8000 - 4000) + 4000);
         })();
     </script>
 
