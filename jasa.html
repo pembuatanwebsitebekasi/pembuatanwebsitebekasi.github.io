@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Jasa AC - Jangan Tunggu AC Anda Rusak di Tengah Cuaca Panas!</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display.swap" rel="stylesheet">
+    
+    <style>
+        /* Font Kustom */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* slate-50 */
+        }
+        /* Animasi halus */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .pulse-orange {
+            animation: pulse-orange 2s infinite;
+        }
+        @keyframes pulse-orange {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-blue-600">
+                Jasa<span class="text-sky-500">AC</span>Anda
+            </div>
+            <a href="#pesan-sekarang" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 pulse-orange">
+                Pesan Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- BAGIAN 1: HEADLINE UTAMA -->
+    <section class="relative py-20 md:py-24 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+            <div class="relative z-10 text-center md:text-left fade-in">
+                <p class="text-lg text-blue-600 font-semibold tracking-widest">PANAS MENYIKSA?</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 !leading-tight mt-2">
+                    Jangan Sampai AC Anda Jadi Korban Berikutnya.
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600">
+                    Dengan lonjakan permintaan akibat cuaca panas, jadwal teknisi kami terisi lebih cepat dari biasanya. Pesan sekarang sebelum Anda masuk daftar tunggu.
+                </p>
+                <div class="mt-10">
+                    <a href="#pesan-sekarang" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl py-4 px-12 rounded-full shadow-lg shadow-orange-500/30 transform hover:scale-105 transition-all duration-300">
+                        Amankan Jadwal Servis Anda
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">⭐ **17+ Pelanggan** di area Anda telah kami layani hari ini.</p>
+                </div>
+            </div>
+            <div class="relative fade-in" style="animation-delay: 0.2s;">
+                 <img src="https://lensabanten.co.id/wp-content/uploads/2023/08/Jasa-Perbaikan-AC.png" alt="Teknisi profesional sedang memperbaiki AC" class="w-full h-full object-cover rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: KELANGKAAN & URGENSI -->
+    <section class="py-12 bg-blue-50">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-gray-900">Jadwal Teknisi Hari Ini Hampir Penuh!</h3>
+            <div class="mt-6 max-w-2xl mx-auto">
+                <h4 class="text-lg font-semibold text-gray-700">KETERSEDIAAN JADWAL:</h4>
+                <div class="w-full bg-gray-300 rounded-full h-6 mt-3 border border-gray-400">
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-6 rounded-full flex items-center justify-center text-white font-bold" style="width: 92%">92% Terisi</div>
+                </div>
+                <p class="mt-3 text-lg text-red-600 font-bold animate-pulse">UPDATE TERAKHIR: HANYA 2 SLOT TERSISA UNTUK HARI INI!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: MASALAH UMUM AC -->
+    <section id="layanan" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">AC Anda Bermasalah Seperti Ini?</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Tanda-tanda AC Anda butuh penanganan segera sebelum kerusakan makin parah.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Masalah 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold text-blue-800">Tidak Dingin</h3>
+                    <p class="mt-3 text-gray-600">Hanya mengeluarkan angin biasa, membuat ruangan tetap panas.</p>
+                </div>
+                <!-- Masalah 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold text-blue-800">Air Menetes</h3>
+                    <p class="mt-3 text-gray-600">Bocoran air yang bisa merusak dinding, plafon, dan perabotan Anda.</p>
+                </div>
+                <!-- Masalah 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-bold text-blue-800">Suara Berisik</h3>
+                    <p class="mt-3 text-gray-600">Suara aneh dari unit AC yang mengganggu kenyamanan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3.5: HARGA SPESIAL (FOMO) -->
+    <section id="harga" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Harga Jujur & Transparan</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+                    Dapatkan harga promo spesial sebelum slot hari ini habis. Harga di bawah ini hanya berlaku untuk <span class="font-bold text-red-600">7 pemesan berikutnya!</span>
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Harga Cuci AC -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-blue-500">
+                    <h3 class="text-2xl font-bold text-blue-800">Cuci AC Rutin</h3>
+                    <p class="mt-2 text-gray-600">Membersihkan unit indoor & outdoor, filter, dan saluran air.</p>
+                    <p class="mt-6 text-4xl font-extrabold text-gray-900">
+                        Rp 65.000<span class="text-lg font-medium text-gray-500">/unit</span>
+                    </p>
+                    <p class="text-gray-500"><del>Harga Normal Rp 90.000</del></p>
+                    <a href="#pesan-sekarang" class="mt-8 block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-full transition-colors duration-300">
+                        Pilih Paket Ini
+                    </a>
+                </div>
+                <!-- Harga Servis & Perbaikan -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-blue-800">Servis & Perbaikan</h3>
+                    <p class="mt-2 text-gray-600">Pengecekan menyeluruh, perbaikan kebocoran, dan masalah lainnya.</p>
+                    <p class="mt-6 text-4xl font-extrabold text-gray-900">
+                        Mulai Rp 150.000
+                    </p>
+                    <p class="text-gray-500">Hubungi untuk diagnosa gratis</p>
+                     <a href="#pesan-sekarang" class="mt-8 block w-full text-center bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 rounded-full transition-colors duration-300">
+                        Konsultasi Dulu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 4: PROMO TERBATAS -->
+    <section class="py-16 md:py-24 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold">PROMO KHUSUS HARI INI!</h2>
+            <p class="mt-4 text-xl text-blue-200">Pesan sekarang dan dapatkan penawaran spesial (senilai Rp 150.000) yang akan berakhir dalam:</p>
+            <div id="countdown-sale" class="mt-8 flex justify-center items-center space-x-4">
+                <div><div id="sale-hours" class="text-5xl font-bold">00</div><div class="text-sm">JAM</div></div>
+                <div class="text-5xl font-bold">:</div>
+                <div><div id="sale-minutes" class="text-5xl font-bold">00</div><div class="text-sm">MENIT</div></div>
+                <div class="text-5xl font-bold">:</div>
+                <div><div id="sale-seconds" class="text-5xl font-bold">00</div><div class="text-sm">DETIK</div></div>
+            </div>
+            <p class="mt-8 text-2xl font-bold bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg inline-block">GRATIS Cek Freon & Garansi Servis 30 Hari</p>
+        </div>
+    </section>
+    
+    <!-- BAGIAN 5: PANGGILAN AKSI (CTA) -->
+    <section id="pesan-sekarang" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Jangan Menunggu Sampai Terlambat!</h2>
+                <p class="mt-4 text-lg text-gray-600">Setiap jam penundaan bisa berarti kerusakan yang lebih mahal. Teknisi profesional kami siap berangkat ke lokasi Anda. Klik tombol di bawah untuk respons tercepat via WhatsApp.</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20servis%20AC%20sekarang." target="_blank" class="mt-10 inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-xl py-5 px-16 rounded-full shadow-lg shadow-orange-500/40 transform hover:scale-105 transition-all duration-300">
+                    PANGGIL TEKNISI SEKARANG
+                </a>
+                <p class="mt-4 text-sm text-gray-500">Klik sekarang & dapatkan respons prioritas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold">JasaACAnda</p>
+            <p class="text-gray-400 mt-2">Solusi Cepat untuk AC Anda</p>
+            <p class="text-sm text-gray-500 mt-8">&copy; 2025 JasaACAnda. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+<script>
+// Countdown Timer Logic
+(function () {
+    // Set tanggal akhir promo (sampai akhir hari ini)
+    const today = new Date();
+    const countdownDate = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1).getTime();
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        // Kalkulasi waktu
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Tampilkan di elemen
+        if(document.getElementById("sale-hours")) {
+            document.getElementById("sale-hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("sale-minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("sale-seconds").innerText = seconds.toString().padStart(2, '0');
+        }
+
+        // Jika waktu habis
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            if(document.getElementById("countdown-sale")) {
+                document.getElementById("countdown-sale").innerHTML = "<div class='text-xl font-bold'>PROMO HARI INI TELAH BERAKHIR</div>";
+            }
+        }
+    }, 1000);
+})();
+</script>
+
+</body>
+</html>

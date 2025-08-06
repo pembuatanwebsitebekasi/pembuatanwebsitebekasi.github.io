@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Merek - Desain Furnitur & Kitchen Set Mewah</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Kustom */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111111; /* Latar belakang hitam pekat */
+            color: #EAEAEA; /* Teks putih keabuan */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Efek overlay gelap pada hero section */
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.5) 100%);
+            z-index: 1;
+        }
+        /* Animasi halus */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="bg-[#111111]/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-serif font-bold tracking-wider text-white">
+                NAMA MEREK
+            </div>
+            <nav class="hidden md:flex space-x-8 text-gray-300">
+                <a href="#layanan" class="hover:text-yellow-400 transition-colors">Layanan</a>
+                <a href="#galeri" class="hover:text-yellow-400 transition-colors">Galeri</a>
+                <a href="#kontak" class="hover:text-yellow-400 transition-colors">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BAGIAN 1: HEADLINE UTAMA -->
+    <section 
+        class="relative hero-overlay bg-cover bg-center text-white min-h-screen flex flex-col items-center justify-center text-center p-6" 
+        style="background-image: url('https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1780&auto=format&fit=crop');">
+        
+        <div class="relative z-10 max-w-4xl fade-in">
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mt-2 !leading-tight">
+                Seni Keanggunan Fungsional
+            </h1>
+            <h2 class="mt-6 text-lg md:text-xl font-light max-w-2xl mx-auto text-gray-200">
+                Kami merancang dan menciptakan furnitur serta kitchen set kustom yang mendefinisikan kembali arti kemewahan dan kenyamanan di ruang Anda.
+            </h2>
+            <div class="mt-10">
+                <a href="#kontak" class="inline-block bg-yellow-600 hover:bg-yellow-700 text-black font-bold text-lg py-4 px-12 rounded-full shadow-lg shadow-yellow-500/20 transform hover:scale-105 transition-all duration-300">
+                    Jadwalkan Konsultasi Pribadi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: LAYANAN KAMI -->
+    <section id="layanan" class="py-16 md:py-24 bg-[#111111]">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-center md:text-left">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Layanan Desain Kustom</h2>
+                <p class="mt-6 text-lg text-gray-400">Setiap ruang memiliki potensi unik. Kami hadir untuk mewujudkannya melalui dua layanan utama kami:</p>
+                <div class="mt-8 space-y-6">
+                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                        <h3 class="text-2xl font-semibold text-yellow-400">Furnitur Bespoke</h3>
+                        <p class="mt-2 text-gray-400">Dari sofa, meja, hingga lemari, kami menciptakan karya yang dirancang khusus sesuai gaya dan kebutuhan Anda.</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-800">
+                        <h3 class="text-2xl font-semibold text-yellow-400">Kitchen Set Mewah</h3>
+                        <p class="mt-2 text-gray-400">Menggabungkan estetika premium dengan fungsionalitas cerdas untuk menciptakan dapur impian Anda.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=1770&auto=format&fit=crop" alt="Dapur mewah dengan desain modern" class="rounded-lg shadow-2xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: GALERI KARYA -->
+    <section id="galeri" class="py-16 md:py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Galeri Karya Kami</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Inspirasi dari proyek-proyek yang telah kami selesaikan dengan penuh dedikasi.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="md:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1617104679233-a66c2b3def45?q=80&w=1887&auto=format&fit=crop" alt="Kitchen set mewah" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                <div class="md:col-span-2">
+                     <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=1770&auto=format&fit=crop" alt="Sofa mewah di ruang tamu" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                 <div class="md:col-span-2">
+                     <img src="https://images.unsplash.com/photo-1616137355032-4a0b43119bb3?q=80&w=1770&auto=format&fit=crop" alt="Ruang makan elegan" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+                 <div class="md:col-span-1">
+                    <img src="https://images.unsplash.com/photo-1631679701832-7a26f0b9f7a7?q=80&w=1887&auto=format&fit=crop" alt="Detail kitchen set" class="w-full h-full object-cover rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN TESTIMONI -->
+    <section class="py-16 md:py-24 bg-[#111111]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Apa Kata Klien Kami</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Kepuasan klien adalah prioritas utama kami.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Testimoni 1 -->
+                <div class="bg-gray-900 p-8 rounded-lg border border-gray-800">
+                    <p class="text-gray-300 italic">"Proses desain kitchen set kami berjalan sangat mulus. Tim [Nama Merek] benar-benar mendengarkan keinginan kami dan mengubah dapur kami menjadi sebuah mahakarya. Kualitasnya luar biasa!"</p>
+                    <div class="mt-6">
+                        <p class="font-semibold text-white">- Keluarga Budi Santoso</p>
+                        <p class="text-sm text-yellow-400">Proyek Kitchen Set, Jakarta</p>
+                    </div>
+                </div>
+                <!-- Testimoni 2 -->
+                <div class="bg-gray-900 p-8 rounded-lg border border-gray-800">
+                    <p class="text-gray-300 italic">"Meja makan kustom yang kami pesan menjadi pusat perhatian di rumah kami. Detail ukiran dan kualitas kayunya sungguh tiada duanya. Terima kasih telah menciptakan sebuah warisan untuk keluarga kami."</p>
+                    <div class="mt-6">
+                        <p class="font-semibold text-white">- Ibu Amelia Wijaya</p>
+                        <p class="text-sm text-yellow-400">Proyek Furnitur Kustom, Surabaya</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN BARU: FAQ -->
+    <section class="py-16 md:py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Pertanyaan Umum</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Jawaban untuk beberapa pertanyaan yang paling sering diajukan.</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer">
+                    <summary class="font-semibold text-lg text-white flex justify-between items-center">
+                        Bagaimana proses pemesanan furnitur kustom?
+                        <span class="text-yellow-400">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400">Proses kami dimulai dengan konsultasi desain untuk memahami visi Anda. Setelah itu, kami akan membuat sketsa dan visualisasi 3D. Setelah desain disetujui, tim pengrajin kami akan memulai proses produksi hingga instalasi akhir di tempat Anda.</p>
+                </details>
+                <!-- FAQ Item 2 -->
+                <details class="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer">
+                    <summary class="font-semibold text-lg text-white flex justify-between items-center">
+                        Material apa saja yang Anda gunakan?
+                        <span class="text-yellow-400">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400">Kami hanya menggunakan material premium terbaik, termasuk kayu solid (jati, mahoni, trembesi), marmer impor, logam berkualitas tinggi, dan kain pelapis dari merek-merek ternama untuk memastikan keindahan dan daya tahan maksimal.</p>
+                </details>
+                <!-- FAQ Item 3 -->
+                <details class="bg-gray-900 p-6 rounded-lg border border-gray-800 cursor-pointer">
+                    <summary class="font-semibold text-lg text-white flex justify-between items-center">
+                        Berapa lama waktu pengerjaan sebuah proyek?
+                        <span class="text-yellow-400">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-400">Waktu pengerjaan bervariasi tergantung pada kompleksitas desain dan skala proyek. Rata-rata, sebuah proyek kitchen set memakan waktu 4-8 minggu, sementara furnitur tunggal bisa lebih cepat. Kami akan memberikan estimasi waktu yang jelas di awal proyek.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN PANGGILAN AKSI (CTA) -->
+    <section id="kontak" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Mulai Proyek Impian Anda</h2>
+                <p class="mt-4 text-lg text-gray-400">Setiap karya besar dimulai dengan sebuah percakapan. Hubungi tim desainer kami untuk konsultasi pribadi dan temukan bagaimana kami dapat mengubah ruang Anda.</p>
+                <a href="mailto:emailanda@contoh.com" class="mt-10 inline-block bg-yellow-600 hover:bg-yellow-700 text-black font-bold text-lg py-4 px-12 rounded-full shadow-lg shadow-yellow-500/20 transform hover:scale-105 transition-all duration-300">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111111] border-t border-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-white">Instagram</a>
+                <a href="#" class="hover:text-white">Pinterest</a>
+                <a href="#" class="hover:text-white">WhatsApp</a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 Nama Merek. Desain & Karya Furnitur Mewah.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

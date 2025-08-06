@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesempatan Terbatas: Miliki Hunian Paling Eksklusif di Griya Seroja Premier</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Kustom */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Efek overlay gelap pada hero section */
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(17, 24, 39, 1) 0%, rgba(17, 24, 39, 0.4) 100%);
+            z-index: 1;
+        }
+        /* Animasi halus */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <!-- BAGIAN 1: HEADLINE UTAMA - MEWAH & EKSKLUSIF -->
+    <section 
+        class="relative hero-overlay bg-cover bg-center text-white min-h-screen flex flex-col items-center justify-center text-center p-6" 
+        style="background-image: url('https://d3lfgix2a8jnun.cloudfront.net/cluster-files/9/griya-seroja-pesanggrahan646dd30b5f702-646dd30b62588.png');">
+        
+        <div class="relative z-10 max-w-4xl fade-in">
+            <p class="text-lg md:text-xl text-yellow-400 font-semibold tracking-widest">GRIYA SEROJA PREMIER</p>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold mt-2 !leading-tight">
+                Sebuah Mahakarya, Bukan Sekadar Hunian
+            </h1>
+            <h2 class="mt-6 text-lg md:text-xl font-light max-w-2xl mx-auto text-gray-200">
+                Ini bukan untuk semua orang. Ini adalah kesempatan langka bagi segelintir orang yang menghargai kemewahan, privasi, dan investasi paling bernilai di tahun 2025.
+            </h2>
+            
+            <div class="mt-10">
+                <a href="#penawaran-eksklusif" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold text-lg py-4 px-12 rounded-md shadow-lg shadow-yellow-400/20 transform hover:scale-105 transition-all duration-300">
+                    KLAIM PENAWARAN EKSKLUSIF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: HITUNG MUNDUR & KELANGKAAN -->
+    <section class="bg-gray-900 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-semibold text-white">Penawaran Eksklusif Ini Akan Berakhir Dalam:</h3>
+            <div id="countdown" class="mt-4 flex justify-center items-center space-x-4 md:space-x-8 text-white">
+                <div>
+                    <div id="days" class="text-4xl md:text-6xl font-bold bg-white/10 px-4 py-2 rounded-lg">00</div>
+                    <div class="text-sm mt-2 text-yellow-400">HARI</div>
+                </div>
+                <div class="text-4xl md:text-6xl font-bold">:</div>
+                <div>
+                    <div id="hours" class="text-4xl md:text-6xl font-bold bg-white/10 px-4 py-2 rounded-lg">00</div>
+                    <div class="text-sm mt-2 text-yellow-400">JAM</div>
+                </div>
+                <div class="text-4xl md:text-6xl font-bold">:</div>
+                <div>
+                    <div id="minutes" class="text-4xl md:text-6xl font-bold bg-white/10 px-4 py-2 rounded-lg">00</div>
+                    <div class="text-sm mt-2 text-yellow-400">MENIT</div>
+                </div>
+                <div class="text-4xl md:text-6xl font-bold">:</div>
+                <div>
+                    <div id="seconds" class="text-4xl md:text-6xl font-bold bg-white/10 px-4 py-2 rounded-lg">00</div>
+                    <div class="text-sm mt-2 text-yellow-400">DETIK</div>
+                </div>
+            </div>
+            <div class="mt-8 max-w-2xl mx-auto">
+                <h4 class="text-xl font-semibold text-white">KETERSEDIAAN UNIT SANGAT TERBATAS</h4>
+                <div class="w-full bg-gray-700 rounded-full h-4 mt-3">
+                    <div class="bg-yellow-400 h-4 rounded-full" style="width: 35%"></div>
+                </div>
+                <p class="mt-2 text-lg text-white font-bold">HANYA <span class="text-yellow-400 animate-pulse">3 UNIT</span> TERSISA!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: ASPIRASI & GAYA HIDUP -->
+    <section class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Sudah Waktunya Anda Naik Kelas</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-400">Lupakan kompromi. Hidup terlalu singkat untuk tidak dinikmati dalam kemewahan yang pantas Anda dapatkan.</p>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="border border-gray-700 bg-gray-900 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-white">Prestige & Privasi</h3>
+                    <p class="mt-3 text-gray-400">Tinggal di kawasan elit yang dirancang eksklusif untuk kenyamanan dan keamanan tak tertandingi.</p>
+                </div>
+                <div class="border border-yellow-400/50 bg-gray-900 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300 scale-105 shadow-2xl shadow-yellow-500/10">
+                    <h3 class="text-2xl font-bold text-yellow-400">Aset Paling Menguntungkan</h3>
+                    <p class="mt-3 text-gray-400">Investasi properti di lokasi premium dengan potensi kenaikan nilai yang melampaui ekspektasi.</p>
+                </div>
+                <div class="border border-gray-700 bg-gray-900 p-8 rounded-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-white">Warisan untuk Generasi</h3>
+                    <p class="mt-3 text-gray-400">Membangun warisan berharga yang akan dikenang dan dinikmati oleh keluarga Anda di masa depan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN TIPE UNIT -->
+    <section class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Pilihan Unit Eksklusif</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Setiap unit dirancang dengan cermat untuk memenuhi standar tertinggi gaya hidup modern dan kemewahan.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Tipe Unit 1 -->
+                <div class="border border-gray-700 bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://griyaseroja.com/wp-content/uploads/2024/01/rumah-murah-jakarta-selatan-jpg.webp" alt="Denah Tipe Amethyst" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-white">Tipe Amethyst</h3>
+                        <p class="text-yellow-400 font-semibold mt-1">LB 78 m² / LT 90 m²</p>
+                        <div class="mt-4 pt-4 border-t border-gray-700 flex justify-around text-center">
+                            <div><p class="font-bold text-xl text-white">3</p><p class="text-sm text-gray-400">K. Tidur</p></div>
+                            <div><p class="font-bold text-xl text-white">2</p><p class="text-sm text-gray-400">K. Mandi</p></div>
+                            <div><p class="font-bold text-xl text-white">1</p><p class="text-sm text-gray-400">Carport</p></div>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20detail%20Tipe%20Amethyst." target="_blank" class="mt-6 block w-full text-center bg-gray-700 group-hover:bg-yellow-400 group-hover:text-gray-900 text-white font-semibold py-3 rounded-md transition-colors duration-300">Info Detail via WhatsApp</a>
+                    </div>
+                </div>
+                <!-- Tipe Unit 2 (Unggulan) -->
+                <div class="border-2 border-yellow-400 bg-gray-800 rounded-lg overflow-hidden group transform scale-105 shadow-2xl shadow-yellow-500/10">
+                    <div class="relative">
+                        <img src="https://griyaseroja.com/wp-content/uploads/2024/01/rumah-murah-jakarta-selatan-jpg.webp" alt="Denah Tipe Sapphire" class="w-full h-48 object-cover">
+                        <span class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 rounded-bl-lg">Paling Populer</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-yellow-400">Tipe Sapphire</h3>
+                        <p class="text-white font-semibold mt-1">LB 90 m² / LT 120 m²</p>
+                         <div class="mt-4 pt-4 border-t border-gray-700 flex justify-around text-center">
+                            <div><p class="font-bold text-xl text-white">3+1</p><p class="text-sm text-gray-400">K. Tidur</p></div>
+                            <div><p class="font-bold text-xl text-white">3</p><p class="text-sm text-gray-400">K. Mandi</p></div>
+                            <div><p class="font-bold text-xl text-white">2</p><p class="text-sm text-gray-400">Carport</p></div>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20detail%20Tipe%20Sapphire." target="_blank" class="mt-6 block w-full text-center bg-yellow-400 text-gray-900 font-bold py-3 rounded-md transition-colors duration-300">Info Detail via WhatsApp</a>
+                    </div>
+                </div>
+                <!-- Tipe Unit 3 -->
+                <div class="border border-gray-700 bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="https://griyaseroja.com/wp-content/uploads/2024/01/rumah-murah-jakarta-selatan-jpg.webp" alt="Denah Tipe Diamond" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-bold text-white">Tipe Diamond</h3>
+                        <p class="text-yellow-400 font-semibold mt-1">LB 120 m² / LT 150 m²</p>
+                         <div class="mt-4 pt-4 border-t border-gray-700 flex justify-around text-center">
+                            <div><p class="font-bold text-xl text-white">4+1</p><p class="text-sm text-gray-400">K. Tidur</p></div>
+                            <div><p class="font-bold text-xl text-white">4</p><p class="text-sm text-gray-400">K. Mandi</p></div>
+                            <div><p class="font-bold text-xl text-white">2</p><p class="text-sm text-gray-400">Carport</p></div>
+                        </div>
+                        <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20detail%20Tipe%20Diamond." target="_blank" class="mt-6 block w-full text-center bg-gray-700 group-hover:bg-yellow-400 group-hover:text-gray-900 text-white font-semibold py-3 rounded-md transition-colors duration-300">Info Detail via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BAGIAN 4: FASILITAS PREMIUM -->
+    <section class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Kemewahan dalam Setiap Detail</h2>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://intracs.co.id/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-29-at-14.27.03_58bf9191-1024x683.webp" alt="Fasilitas Premium" class="rounded-lg shadow-2xl w-full">
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-yellow-400/10 text-yellow-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-white">One Gate System & 24/7 Security</h3>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-yellow-400/10 text-yellow-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-white">Private Clubhouse & Swimming Pool</h3>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-yellow-400/10 text-yellow-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-white">Lokasi Strategis di Jantung Kota</h3>
+                    </div>
+                     <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-yellow-400/10 text-yellow-400">
+                           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path></svg>
+                        </div>
+                        <h3 class="ml-4 text-xl font-semibold text-white">Smart Home System Ready</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN PETA LOKASI -->
+    <section class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Lokasi Adalah Segalanya</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-400">Terletak di alamat paling prestisius, memberikan Anda akses tak tertandingi ke pusat bisnis, pendidikan, dan gaya hidup terbaik.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- Daftar POI -->
+                <div class="md:col-span-1 space-y-4">
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                        <span class="text-yellow-400 font-bold text-lg mr-4">5</span>
+                        <span class="text-white">Menit ke Pintu Tol Utama</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                        <span class="text-yellow-400 font-bold text-lg mr-4">10</span>
+                        <span class="text-white">Menit ke International School</span>
+                    </div>
+                    <div class="bg-gray-900 p-4 rounded-lg flex items-center">
+                        <span class="text-yellow-400 font-bold text-lg mr-4">15</span>
+                        <span class="text-white">Menit ke CBD & Mall Mewah</span>
+                    </div>
+                </div>
+                <!-- Peta Interaktif -->
+                <div class="md:col-span-2 h-96">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322732!2d106.8195938147688!3d-6.194741395514931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356280477!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1662456320995!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-lg shadow-2xl border-2 border-gray-700">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 5: PENAWARAN EKSKLUSIF -->
+    <section id="penawaran-eksklusif" class="py-16 md:py-24 bg-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-white uppercase">Penawaran <span class="text-yellow-400">Khusus Undangan</span></h2>
+            <p class="mt-2 text-xl text-gray-300">Hanya berlaku selama periode promo dan untuk 3 pembeli pertama.</p>
+            
+            <div class="mt-12 max-w-4xl mx-auto text-left grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-bold text-white">Fleksibilitas Pembayaran</h3>
+                    <p class="mt-2 text-gray-400">Opsi DP 0% dan skema KPR yang kami bantu sepenuhnya hingga disetujui.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h3 class="text-2xl font-bold text-white">Bebas Semua Biaya</h3>
+                    <p class="mt-2 text-gray-400">Biaya AJB, BPHTB, dan KPR senilai puluhan juta kami tanggung untuk Anda.</p>
+                </div>
+                <div class="bg-yellow-400/10 p-8 rounded-lg border border-yellow-400/50 md:col-span-2">
+                    <h3 class="text-2xl font-bold text-yellow-400">Luxury Welcome Package</h3>
+                    <p class="mt-2 text-gray-300">Masuk ke rumah baru Anda yang telah dilengkapi dengan:</p>
+                    <ul class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-lg text-white">
+                        <li class="flex items-center">✓ 2 Unit AC Inverter</li>
+                        <li class="flex items-center">✓ Canopy Desain Modern</li>
+                        <li class="flex items-center">✓ Full Kitchen Set Premium</li>
+                        <li class="flex items-center">✓ Smart Home System (CCTV & Smart Lock)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="mt-8 text-2xl font-bold text-white">Total Keuntungan Senilai <span class="text-yellow-400">Rp 75.000.000!</span></p>
+            
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20menerima%20undangan%20eksklusif%20dan%20tertarik%20dengan%20Griya%20Seroja%20Premier." target="_blank" class="mt-8 inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white font-bold text-lg py-4 px-8 rounded-md shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.687-1.475L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.919 6.166l-1.138 4.162 4.273-1.12z"/></svg>
+                HUBUNGI KONSULTAN PRIBADI SAYA
+            </a>
+        </div>
+    </section>
+
+    <!-- BAGIAN 6: PANGGILAN TERAKHIR - FOMO MAKSIMAL -->
+    <section class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="font-serif text-4xl md:text-6xl font-bold text-white">Keputusan Ada di Tangan Anda</h2>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+                Anda bisa menutup halaman ini dan kembali ke pencarian yang melelahkan. Atau, Anda bisa mengambil satu langkah kecil hari ini untuk sebuah kehidupan yang luar biasa. Pilihan yang akan Anda sesali adalah tidak melakukan apa-apa.
+            </p>
+            <p class="mt-6 text-xl font-bold text-yellow-400 animate-pulse">
+                Saat Anda menunda, orang lain sedang mengamankan unit impiannya.
+            </p>
+            <a href="#penawaran-eksklusif" class="mt-10 inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-black text-xl md:text-2xl py-5 px-16 rounded-md shadow-lg shadow-yellow-400/30 transform hover:scale-105 transition-all duration-300">
+                SAYA SIAP NAIK KELAS!
+            </a>
+            <p class="mt-4 text-sm text-gray-500">
+                Konsultasi 100% rahasia dan gratis.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center text-sm">
+            <p>&copy; 2025 Griya Seroja Premier. An Exclusive Residence.</p>
+            <p class="text-gray-500 mt-2">Marketing Gallery: Jl. Boulevard Utama No. 1, Jakarta</p>
+        </div>
+    </footer>
+
+    <!-- Tombol WhatsApp Mengambang -->
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Griya%20Seroja%20Premier." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 transform hover:scale-110 transition-all duration-300 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.687-1.475L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.919 6.166l-1.138 4.162 4.273-1.12z"/>
+        </svg>
+    </a>
+
+<script>
+// Countdown Timer Logic
+(function () {
+    // Set tanggal akhir promo (3 hari dari sekarang)
+    const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        // Kalkulasi waktu
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Tampilkan di elemen
+        if(document.getElementById("days")) {
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+        }
+
+        // Jika waktu habis
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            if(document.getElementById("countdown")) {
+                document.getElementById("countdown").innerHTML = "<div class='text-2xl font-bold text-red-500'>PENAWARAN EKSKLUSIF TELAH BERAKHIR</div>";
+            }
+        }
+    }, 1000);
+})();
+</script>
+
+</body>
+</ht

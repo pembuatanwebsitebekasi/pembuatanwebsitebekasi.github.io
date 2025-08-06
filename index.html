@@ -33,6 +33,11 @@
             70% { transform: scale(1.05); box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
             100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
         }
+        /* Tailwind CSS class for aspect ratio */
+        @layer utilities {
+            .aspect-w-1 { aspect-ratio: 1 / 1; }
+            .aspect-h-1 { /* not needed with aspect-ratio property */ }
+        }
     </style>
     
     <!-- JSON-LD Schema Markup for SEO -->
@@ -128,6 +133,10 @@
                             👉 Lihat Paket & Amankan Promo!
                         </a>
                         <p class="mt-4 text-sm text-red-500 font-semibold">Diskon 60% akan hangus dalam beberapa jam!</p>
+                        <!-- Link to Demo Section -->
+                        <a href="#demo" class="mt-6 inline-block text-gray-600 hover:text-red-600 font-semibold transition-colors">
+                            Atau, lihat contoh desain kami dulu <i class="fas fa-chevron-down ml-1 text-sm"></i>
+                        </a>
                     </div>
                     <div class="mt-12">
                        <img src="website.png" alt="Contoh desain website profesional dari JasaWebsite.id untuk berbagai bisnis" class="rounded-lg shadow-2xl mx-auto w-full max-w-2xl md:max-w-3xl" onerror="this.onerror=null;this.src='https://placehold.co/1200x600';">
@@ -189,6 +198,65 @@
                         </div>
                          <p class="mt-4 text-center font-bold text-red-600">Anda Dapatkan Semuanya GRATIS Jika Order Hari Ini!</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEMO/PORTFOLIO SECTION (REVISED) -->
+        <section id="demo" class="py-16 md:py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Intip Desain Profesional Kami</h2>
+                    <p class="mt-4 text-lg text-gray-600">Berikut adalah beberapa contoh desain website yang bisa kami sesuaikan untuk bisnis Anda. Klik untuk melihat demonya.</p>
+                    <!-- Penjelasan Tambahan Sesuai Permintaan -->
+                    <div class="mt-6 bg-blue-100 border-l-4 border-blue-500 text-blue-800 p-4 rounded-r-lg text-left shadow">
+                        <p class="font-semibold"><i class="fas fa-info-circle mr-2"></i>Catatan Penting:</p>
+                        <p class="mt-1">Ini hanyalah contoh. Desain dapat kami modifikasi atau buat baru sepenuhnya untuk disesuaikan dengan kebutuhan dan identitas brand unik Anda. Anda bebas memberikan referensi desain yang Anda inginkan!</p>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Demo Item 1 -->
+                    <a href="toko.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="toko.jpg" alt="Contoh Desain Website Toko Online" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">Toko Online</h3>
+                        </div>
+                    </a>
+                    <!-- Demo Item 2 -->
+                    <a href="perusahaan.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="perusahaan.jpeg" alt="Contoh Desain Website Profil Perusahaan" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">Profil Perusahaan</h3>
+                        </div>
+                    </a>
+                    <!-- Demo Item 3 -->
+                    <a href="jasa.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="jasa.jpg" alt="Contoh Desain Website Landing Page Produk" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">Jasa Service</h3>
+                        </div>
+                    </a>
+                    <!-- Demo Item 4 -->
+                    <a href="furnitur.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="furniture.jpg" alt="Contoh Desain Website Portofolio" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">furniture</h3>
+                        </div>
+                    </a>
+                    <!-- Demo Item 5 -->
+                    <a href="properti.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="properti.jpg" alt="Contoh Desain Website Blog Pribadi" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">Properti</h3>
+                        </div>
+                    </a>
+                    <!-- Demo Item 6 -->
+                    <a href="catering.html" target="_blank" class="group relative block rounded-lg overflow-hidden shadow-lg aspect-w-1 aspect-h-1">
+                        <img src="catering.jpeg" alt="Contoh Desain Website Restoran" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center p-4">
+                            <h3 class="text-white text-xl font-bold text-center">Catering</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>

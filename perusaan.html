@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Perusahaan - Solusi Inovatif untuk Pertumbuhan Bisnis Anda</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Kustom */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* slate-900 */
+            color: #CBD5E1; /* slate-300 */
+        }
+        /* Efek Gradien */
+        .gradient-text {
+            background: linear-gradient(to right, #38BDF8, #A78BFA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, #1E3A8A 0%, #312E81 100%);
+        }
+        /* Animasi halus */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-extrabold text-white">
+                Nama<span class="text-sky-400">Perusahaan</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-slate-300 font-medium">
+                <a href="#layanan" class="hover:text-sky-400 transition-colors">Layanan</a>
+                <a href="#tentang" class="hover:text-sky-400 transition-colors">Tentang Kami</a>
+                <a href="#proyek" class="hover:text-sky-400 transition-colors">Proyek</a>
+                <a href="#kontak" class="hover:text-sky-400 transition-colors">Kontak</a>
+            </nav>
+            <a href="#kontak" class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-6 rounded-full transition-colors duration-300">
+                Mulai Proyek
+            </a>
+        </div>
+    </header>
+
+    <!-- BAGIAN 1: HEADLINE UTAMA -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-slate-900"></div>
+        <div class="absolute inset-0 opacity-20" style="background-image: url('https://www.transparenttextures.com/patterns/cubes.png');"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white !leading-tight">
+                    Transformasi Digital yang <span class="gradient-text">Memberi Dampak Nyata</span>
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-slate-400">
+                    Kami bukan sekadar vendor. Kami adalah partner akselerasi bisnis Anda, merancang solusi teknologi yang presisi untuk masa depan industri.
+                </p>
+                <div class="mt-10 flex justify-center gap-4">
+                    <a href="#layanan" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold text-lg py-4 px-10 rounded-full shadow-lg shadow-sky-500/20 transform hover:scale-105 transition-all duration-300">
+                        Layanan Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 1.5: DIPERCAYA OLEH -->
+    <section class="py-12 bg-slate-800">
+        <div class="container mx-auto px-6">
+            <h3 class="text-center text-slate-400 font-semibold uppercase tracking-wider">Dipercaya oleh Perusahaan Terkemuka</h3>
+            <div class="mt-8 flex flex-wrap justify-center items-center gap-x-12 md:gap-x-16 gap-y-6 grayscale opacity-60 invert">
+                <!-- CATATAN: Menggunakan filter 'invert' untuk membuat logo SVG hitam menjadi putih di latar gelap -->
+                <img src="data:image/png;base64,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" alt="Logo Klien A" class="h-8 w-auto">
+                <img src="data:image/png;base64,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" alt="Logo Klien B" class="h-8 w-auto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQftzb0EfthH0ompr4cYl3R55MbhqEZMFqQgg&s" alt="Logo Klien C" class="h-8 w-auto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX_3t1CmKh--H5X2PUy9EXq6pUmk4fACjz9Q&s" alt="Logo Klien D" class="h-8 w-auto hidden sm:block">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCqFmr6uX5B0fMRyCC4fIOVk4Y6rj8uYG2w&s" alt="Logo Klien E" class="h-8 w-auto hidden md:block">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: LAYANAN KAMI -->
+    <section id="layanan" class="py-16 md:py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Solusi Digital Terintegrasi</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">Dari ide hingga implementasi, kami hadir di setiap langkah.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Layanan 1 -->
+                <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 hover:border-sky-500 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white">Konsultasi Strategis</h3>
+                    <p class="mt-3 text-slate-400">Merumuskan roadmap digital yang efektif untuk keunggulan kompetitif jangka panjang.</p>
+                </div>
+                <!-- Layanan 2 -->
+                <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 hover:border-sky-500 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white">Pengembangan Perangkat Lunak</h3>
+                    <p class="mt-3 text-slate-400">Membangun aplikasi web dan mobile kustom yang andal, skalabel, dan aman.</p>
+                </div>
+                <!-- Layanan 3 -->
+                <div class="bg-slate-800 p-8 rounded-lg border border-slate-700 hover:border-sky-500 transition-colors duration-300">
+                    <h3 class="text-2xl font-bold text-white">Analitik Data & AI</h3>
+                    <p class="mt-3 text-slate-400">Mengubah data menjadi aset strategis untuk pengambilan keputusan berbasis AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: TENTANG KAMI -->
+    <section id="tentang" class="py-16 md:py-24 bg-slate-800">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Mitra Inovasi Anda</h2>
+                <p class="mt-4 text-lg text-slate-400">Kami adalah tim yang terdiri dari para ahli strategi, developer, dan analis data yang bersemangat dalam memecahkan masalah kompleks. Kami percaya pada kekuatan kolaborasi dan transparansi untuk memberikan hasil yang melebihi ekspektasi.</p>
+                <div class="mt-8 grid grid-cols-2 gap-6 text-white">
+                    <div><p class="text-4xl font-bold gradient-text">10+</p><p class="text-slate-400">Tahun Pengalaman</p></div>
+                    <div><p class="text-4xl font-bold gradient-text">500+</p><p class="text-slate-400">Proyek Sukses</p></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1770&auto=format&fit=crop" alt="Tim profesional yang beragam" class="rounded-lg shadow-2xl w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 4: PROYEK KAMI -->
+    <section id="proyek" class="py-16 md:py-24 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Studi Kasus Unggulan</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-slate-400">Lihat bagaimana kami memberikan dampak nyata bagi klien kami.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Proyek 1 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group border border-slate-700 hover:border-sky-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1770&auto=format&fit=crop" alt="Proyek Finansial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Platform FinTech Inovatif</h3>
+                        <p class="text-slate-400 mt-2">Meningkatkan efisiensi transaksi hingga 40%.</p>
+                    </div>
+                </div>
+                <!-- Proyek 2 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group border border-slate-700 hover:border-sky-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1770&auto=format&fit=crop" alt="Proyek E-commerce" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Revitalisasi E-commerce</h3>
+                        <p class="text-slate-400 mt-2">Meningkatkan konversi penjualan sebesar 60%.</p>
+                    </div>
+                </div>
+                <!-- Proyek 3 -->
+                <div class="bg-slate-800 rounded-lg overflow-hidden group border border-slate-700 hover:border-sky-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=1770&auto=format&fit=crop" alt="Proyek Analitik" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Dashboard Analitik Cerdas</h3>
+                        <p class="text-slate-400 mt-2">Mempercepat pengambilan keputusan strategis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 5: PANGGILAN AKSI (CTA) -->
+    <section id="kontak" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto p-10 rounded-lg gradient-bg">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Wujudkan Visi Anda Bersama Kami</h2>
+                <p class="mt-4 text-lg text-slate-300">Diskusikan ide besar Anda. Tim kami siap membantu mengubahnya menjadi kenyataan. Jadwalkan konsultasi gratis tanpa kewajiban.</p>
+                <a href="mailto:kontak@namaperusahaan.com" class="mt-10 inline-block bg-white hover:bg-slate-200 text-slate-900 font-bold text-lg py-4 px-12 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Hubungi Kami Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700 text-slate-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold text-white">NamaPerusahaan</p>
+            <p class="mt-2">Jalan Jenderal Sudirman No. 123, Jakarta, Indonesia</p>
+            <p class="mt-1">kontak@namaperusahaan.com | (021) 123-4567</p>
+            <p class="text-sm text-slate-500 mt-8">&copy; 2025 NamaPerusahaan. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

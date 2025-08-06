@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Katering - Jangan Sampai Kehabisan Slot Makan Siang Hari Ini!</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Kustom */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FEFDFB; /* Latar belakang putih gading */
+            color: #4A4A4A; /* Teks abu-abu tua */
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Animasi halus */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .pulse-orange {
+            animation: pulse-orange 2s infinite;
+        }
+        @keyframes pulse-orange {
+            0%, 100% {
+                box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(249, 115, 22, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-700">
+                NamaKatering
+            </div>
+            <a href="#pesan-sekarang" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 pulse-orange">
+                Pesan Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- BAGIAN 1: HEADLINE UTAMA -->
+    <section class="py-20 md:py-24">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+            <div class="text-center md:text-left fade-in">
+                <p class="text-lg text-orange-600 font-semibold tracking-widest">SLOT TERBATAS SETIAP HARI!</p>
+                <h1 class="font-serif text-4xl md:text-6xl font-bold !leading-tight text-gray-900 mt-2">
+                    Jangan Sampai Kehabisan Menu Hari Ini.
+                </h1>
+                <p class="mt-6 text-lg md:text-xl text-gray-600">
+                    Capek mikirin mau makan apa? Kami memasak menu rumahan spesial setiap hari dalam jumlah terbatas. Pesan sekarang sebelum slot Anda diambil orang lain!
+                </p>
+                <div class="mt-10">
+                    <a href="#paket" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg py-4 px-12 rounded-full shadow-lg shadow-orange-500/30 transform hover:scale-105 transition-all duration-300">
+                        Amankan Slot Saya!
+                    </a>
+                </div>
+            </div>
+            <div class="relative fade-in" style="animation-delay: 0.2s;">
+                 <img src="https://kemasanfnb.com/wp-content/uploads/2024/10/menu-catering.webp" alt="Hidangan masakan rumahan yang lezat" class="w-full h-full object-cover rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 2: KELANGKAAN & URGENSI -->
+    <section class="py-12 bg-yellow-50 border-t border-b border-yellow-200">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-gray-900">Slot Katering Hari Ini Hampir Habis!</h3>
+            <div class="mt-6 max-w-2xl mx-auto">
+                <h4 class="text-lg font-semibold text-gray-700">KETERSEDIAAN SLOT PENGIRIMAN:</h4>
+                <div class="w-full bg-gray-300 rounded-full h-6 mt-3 border border-gray-400">
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-6 rounded-full flex items-center justify-center text-white font-bold" style="width: 88%">88% Terisi</div>
+                </div>
+                <p class="mt-3 text-lg text-red-600 font-bold animate-pulse">UPDATE: HANYA 5 SLOT TERSISA UNTUK PENGIRIMAN HARI INI!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 3: MENU HARI INI -->
+    <section id="menu" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Menu Spesial Hari Ini</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Setiap hari kami memasak menu yang berbeda dan terbatas. Jangan sampai ketinggalan!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Menu 1 -->
+                <div class="bg-white rounded-lg overflow-hidden group shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://www.homade.id/wp-content/uploads/2020/05/menu-ayam-rawon.jpg" alt="Ayam Rawon" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Ayam Rawon</h3>
+                    </div>
+                </div>
+                <!-- Menu 2 -->
+                <div class="bg-white rounded-lg overflow-hidden group shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://kulina.imgix.net/production/DJ2I6HCS5C-paket%20nasi%20ayam%20bakar%20bumbu%20padang.png" alt="Ayam Bakar Padang" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Ayam Bakar Padang</h3>
+                    </div>
+                </div>
+                <!-- Menu 3 -->
+                <div class="bg-white rounded-lg overflow-hidden group shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://www.homade.id/wp-content/uploads/2020/05/menu-ayam-panggang-klaten.jpg" alt="Ayam Panggang Klaten" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Ayam Panggang Klaten</h3>
+                    </div>
+                </div>
+                <!-- Menu 4 -->
+                 <div class="bg-white rounded-lg overflow-hidden group shadow-md border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://www.homade.id/wp-content/uploads/2020/05/Ayam-Bumbu-Kecap.jpg" alt="Ayam Bumbu Kecap" class="w-full h-48 object-cover">
+                    <div class="p-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Ayam Bumbu Kecap</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BAGIAN 4: PAKET CATERING -->
+    <section id="paket" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Paket Langganan Terlaris</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Harga spesial ini hanya berlaku untuk pendaftaran hari ini!</p>
+            </div>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Paket Harian -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border-2 border-orange-500 transform hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-2xl font-bold text-green-800">Paket Harian (1 Orang)</h3>
+                    <p class="mt-2 text-gray-600">Menu lengkap makan siang diantar setiap hari kerja (Senin-Jumat).</p>
+                    <p class="mt-6 text-4xl font-extrabold text-gray-900">
+                        Rp 25.000<span class="text-lg font-medium text-gray-500">/hari</span>
+                    </p>
+                    <p class="text-gray-500"><del>Harga Normal Rp 30.000</del></p>
+                    <a href="#kontak" class="mt-8 block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-full transition-colors duration-300">
+                        Daftar Paket Ini
+                    </a>
+                </div>
+                <!-- Paket Keluarga -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-green-800">Paket Keluarga (3-4 Orang)</h3>
+                    <p class="mt-2 text-gray-600">Menu lauk & sayur lengkap untuk makan bersama keluarga.</p>
+                    <p class="mt-6 text-4xl font-extrabold text-gray-900">
+                        Mulai Rp 75.000
+                    </p>
+                    <p class="text-gray-500">/hari</p>
+                     <a href="#kontak" class="mt-8 block w-full text-center bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 rounded-full transition-colors duration-300">
+                        Konsultasi Menu
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN BARU: PERMINTAAN KHUSUS -->
+    <section class="py-16 md:py-20 bg-green-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Punya Permintaan Khusus?</h2>
+                <p class="mt-4 text-lg text-gray-600">Tidak menemukan menu yang Anda cari? Atau butuh penyesuaian untuk acara spesial dan kebutuhan diet tertentu? Jangan ragu untuk bertanya. **Apapun keinginan Anda, kami siap membantu**.</p>
+                 <a href="#kontak" class="mt-8 inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300">
+                    Diskusikan dengan Kami
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN TESTIMONI -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Apa Kata Pelanggan Setia Kami</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Testimoni 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-gray-600 italic">"Semenjak langganan di sini, saya nggak pernah pusing lagi mikirin makan siang di kantor. Menunya ganti-ganti, rasanya pas di lidah, dan harganya sangat terjangkau. Penyelamat banget!"</p>
+                    <div class="mt-6">
+                        <p class="font-semibold text-gray-900">- Ibu Sarah, Karyawan Swasta</p>
+                    </div>
+                </div>
+                <!-- Testimoni 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200">
+                    <p class="text-gray-600 italic">"Masakannya benar-benar seperti masakan rumah. Anak-anak saya jadi lahap makan. Pengirimannya juga selalu tepat waktu. Terima kasih banyak, [Nama Katering]!"</p>
+                    <div class="mt-6">
+                        <p class="font-semibold text-gray-900">- Bapak Andi, Ayah 2 Anak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN FAQ -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-gray-900">Pertanyaan Umum</h2>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <details class="bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Bagaimana cara memesannya?
+                        <span class="text-green-600">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Cara termudah adalah dengan mengklik tombol "Pesan Sekarang" atau "Tanya Ketersediaan Slot" di halaman ini untuk langsung terhubung dengan kami via WhatsApp. Tim kami akan segera merespons pesanan Anda.</p>
+                </details>
+                <!-- FAQ Item 2 -->
+                <details class="bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Apakah menunya halal?
+                        <span class="text-green-600">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Tentu saja. Kami menjamin 100% semua bahan yang kami gunakan dan proses memasak kami adalah halal.</p>
+                </details>
+                <!-- FAQ Item 3 -->
+                <details class="bg-white p-6 rounded-lg border border-gray-200 cursor-pointer">
+                    <summary class="font-semibold text-lg flex justify-between items-center">
+                        Kapan batas waktu pemesanan untuk hari yang sama?
+                        <span class="text-green-600">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Kami menyarankan untuk memesan sebelum jam 9 pagi untuk pengiriman makan siang di hari yang sama. Namun, slot seringkali sudah penuh sebelum itu, jadi lebih cepat lebih baik!</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- BAGIAN 5: PANGGILAN AKSI (CTA) -->
+    <section id="pesan-sekarang" class="py-16 md:py-24 bg-green-700">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-white">Slot Terbatas, Jangan Sampai Menyesal!</h2>
+                <p class="mt-4 text-lg text-green-100">Hubungi kami via WhatsApp sekarang juga untuk memastikan Anda tidak kehabisan menu lezat hari ini. Siapa cepat, dia dapat!</p>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20pesan%20katering%20untuk%20hari%20ini,%20apakah%20masih%20ada%20slot?" target="_blank" class="mt-10 inline-block bg-white hover:bg-yellow-300 text-green-800 font-bold text-lg py-4 px-12 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Tanya Ketersediaan Slot (WA)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-600 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-black">Instagram</a>
+                <a href="#" class="hover:text-black">WhatsApp</a>
+            </div>
+            <p class="text-sm text-gray-500">&copy; 2025 Nama Katering. Masakan Rumahan Penuh Cinta.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
